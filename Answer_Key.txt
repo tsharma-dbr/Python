@@ -1,0 +1,33 @@
+IBM Data Visualization with Python — Final Assignment Answer Key
+
+Q1 — Upload:
+Final_Assignment_Part_1_Create_Visualizations_using_Matplotlib_Seaborn_Folium.ipynb
+
+Q2 — Correct grouped bar plot:
+sns.barplot(x='Recession', y='Automobile_Sales', hue='Vehicle_Type', data=df)
+
+Q3 — Select these three observations:
+1. SuperMiniCar performs better than ExecutiveCar in recession.
+3. Sales are higher in non-recession periods for all vehicle types.
+4. Executive cars and sports car consistently have the lowest sales in both conditions.
+
+Q4 — Upload:
+Final_Assignment_Part_2_Create_Dashboard_with_Plotly_and_Dash.py
+
+Q5 — Correct answer:
+To create a container for other components and organize content.
+
+Q6 — Upload:
+RecessionReportgraphs.png
+
+Q7 — Select both statements:
+1. The year dropdown is enabled when 'Yearly Statistics' is selected.
+3. The year dropdown is disabled when 'Recession Period Statistics' is selected.
+
+Q8 — Upload:
+YearlyReportgraphs.png
+
+Q9 — Correct answer:
+Pie chart.
+
+Note: This key is based on the visible grader feedback and assignment material provided in this conversation. It cannot guarantee a particular score because the platform applies its own evaluation rules.
