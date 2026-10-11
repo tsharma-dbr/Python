@@ -1,0 +1,10 @@
+Run these commands from the course project's final_project directory, on a machine that can reach the IBM Skills Network Watson NLP endpoint. Paste the actual terminal transcript into Question 3; do not paste this instruction file as output.
+
+$ cd /home/project/final_project
+$ python3
+>>> from emotion_detection import emotion_detector
+>>> emotion_detector("I am so happy I am doing this.")
+<PASTE THE ACTUAL RESPONSE DICTIONARY RETURNED BY THE LIVE WATSON SERVICE HERE>
+>>> exit()
+
+The required import is `from emotion_detection import emotion_detector`. A mocked response or compile-only output does not establish that the live application was imported and tested successfully.

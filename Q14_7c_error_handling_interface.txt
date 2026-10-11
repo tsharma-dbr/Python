@@ -1,0 +1,1 @@
+Do not submit this instruction file as evidence. Start the Flask app with `py server.py`, open http://127.0.0.1:5000/, leave the text field empty, and click Analyze emotion. The app should display “Invalid input! Please enter some text to analyze.” Capture the browser showing the message and save the genuine screenshot as `7c_error_handling_interface.png`.

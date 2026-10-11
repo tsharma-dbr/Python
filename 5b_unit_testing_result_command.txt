@@ -1,0 +1,5 @@
+The 5a_unit_testing.py file contains the five course-style live Watson API tests. After copying it to the project root as `test_emotion_detection.py`, run:
+
+py -m unittest -v test_emotion_detection.py
+
+The five tests call the live IBM Skills Network endpoint; they need working internet access and a reachable endpoint. Capture and submit the real terminal output from that run. The offline mocked suite is included separately as `test_emotion_detection.py` in the project root, and is not a substitute for the course's live API test output.

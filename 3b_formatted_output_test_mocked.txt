@@ -1,0 +1,4 @@
+Import test: PASS
+Formatted-output smoke test with mocked HTTP response: PASS
+Mock output: {'anger': 0.02, 'disgust': 0.01, 'fear': 0.04, 'joy': 0.88, 'sadness': 0.05, 'dominant_emotion': 'joy'}
+Note: mock output only; not a live Watson API response.

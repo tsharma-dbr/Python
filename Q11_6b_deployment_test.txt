@@ -1,0 +1,1 @@
+Do not submit this instruction file as evidence. Start the Flask app with `py server.py`, open http://127.0.0.1:5000/, enter a non-empty sample sentence, click Analyze emotion, and capture the browser showing the result. Save that genuine screenshot as 6b_deployment_test.png. Live scores require the IBM endpoint to be reachable.

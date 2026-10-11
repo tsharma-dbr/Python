@@ -1,0 +1,9 @@
+From the project root, run:
+
+py -c "from EmotionDetection import emotion_detector; print('emotion_detector imported successfully')"
+
+For the lab's actual live endpoint test, run the following only when internet access is available:
+
+py -c "from EmotionDetection import emotion_detector; print(emotion_detector('I am glad this happened'))"
+
+The response scores must be copied from the real terminal; this build environment could not resolve the IBM Skills Network host, so live API output is not supplied here.

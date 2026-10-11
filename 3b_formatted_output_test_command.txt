@@ -1,0 +1,5 @@
+Run this from the project root when the IBM endpoint is reachable:
+
+py -c "from EmotionDetection.emotion_detection import emotion_detector; print(emotion_detector('I am glad this happened'))"
+
+Paste the actual dictionary returned by your terminal. Do not copy invented or placeholder numerical scores.

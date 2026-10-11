@@ -1,0 +1,7 @@
+1. Open a terminal in the extracted EmotionDetection_Submission directory.
+2. Install dependencies: `py -m pip install -r requirements.txt`.
+3. Start the app: `py server.py`.
+4. In a browser, open `http://127.0.0.1:5000/`.
+5. Enter a non-empty sentence and click Analyze emotion.
+6. When the actual Watson service response is displayed, take a screenshot of the browser window and save it as `6b_deployment_test.png`.
+Do not use a mock score for this screenshot; the live IBM Skills Network endpoint must be reachable for authentic analysis.

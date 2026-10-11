@@ -1,0 +1,7 @@
+Generate this output on a machine that can access the IBM Skills Network Watson NLP endpoint. Do not submit these instructions as terminal output.
+
+From the project root, run:
+
+$ python -m unittest -v test_emotion_detection.py
+
+Copy the complete, actual terminal output into Question 9. All five test names must end in `ok`, and the summary must end with `OK`. The run time can vary. If the endpoint is unavailable, the tests cannot be represented as passed.

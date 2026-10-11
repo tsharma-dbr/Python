@@ -1,0 +1,13 @@
+test_anger (test_emotion_detection.TestEmotionDetector.test_anger) ... ok
+test_blank_input_returns_expected_none_values_without_request (test_emotion_detection.TestEmotionDetector.test_blank_input_returns_expected_none_values_without_request) ... ok
+test_disgust (test_emotion_detection.TestEmotionDetector.test_disgust) ... ok
+test_fear (test_emotion_detection.TestEmotionDetector.test_fear) ... ok
+test_http_400_returns_expected_none_values (test_emotion_detection.TestEmotionDetector.test_http_400_returns_expected_none_values) ... ok
+test_joy (test_emotion_detection.TestEmotionDetector.test_joy) ... ok
+test_sadness (test_emotion_detection.TestEmotionDetector.test_sadness) ... ok
+test_server_error_returns_none (test_emotion_detection.TestEmotionDetector.test_server_error_returns_none) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+OK

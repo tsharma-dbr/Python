@@ -1,0 +1,6 @@
+Run this command from the project root after packaging. Paste the actual terminal output (including the real emotion scores) into Question 7.
+
+$ python -c "from EmotionDetection.emotion_detection import emotion_detector; print(emotion_detector('I am really mad about this'))"
+<PASTE THE ACTUAL RETURNED DICTIONARY HERE; dominant_emotion should be 'anger'>
+
+The response dictionary must show the anger, disgust, fear, joy, and sadness scores, as well as dominant_emotion. The phrase "EmotionDetection is a valid package" by itself is insufficient for the grader.
