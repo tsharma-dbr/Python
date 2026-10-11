@@ -1,6 +1,10 @@
-Run from the project root:
+QUESTION 7 — RUN FROM THE PROJECT ROOT
 
-py -c "from EmotionDetection import emotion_detector; print('EmotionDetection is a valid package')"
+The grader requires the explicit import and the emotion scores (including dominant_emotion: 'anger'). Run this exact command in an environment that can reach the IBM Skills Network endpoint:
 
-The expected successful output is:
-EmotionDetection is a valid package
+python -c "from EmotionDetection.emotion_detection import emotion_detector; print(emotion_detector('I am really mad about this'))"
+
+On Windows, use:
+py -c "from EmotionDetection.emotion_detection import emotion_detector; print(emotion_detector('I am really mad about this'))"
+
+Copy the import command and the actual dictionary output into Question 7. The dictionary should include anger, disgust, fear, joy, sadness, and dominant_emotion. Do not use the words 'EmotionDetection is a valid package' alone.

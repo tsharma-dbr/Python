@@ -1,9 +1,20 @@
-From the project root, run:
+QUESTION 3 — RUN THIS IN THE COURSE LAB TERMINAL
 
-py -c "from EmotionDetection import emotion_detector; print('emotion_detector imported successfully')"
+The grader's feedback specifically asks for a Python shell session from /home/project/final_project and this import:
+    from emotion_detection import emotion_detector
 
-For the lab's actual live endpoint test, run the following only when internet access is available:
+Run these commands in the Skills Network lab terminal (the output must come from your live run):
 
-py -c "from EmotionDetection import emotion_detector; print(emotion_detector('I am glad this happened'))"
+cd /home/project/final_project
+python3
+>>> from emotion_detection import emotion_detector
+>>> emotion_detector("I love this new technology")
+>>> exit()
 
-The response scores must be copied from the real terminal; this build environment could not resolve the IBM Skills Network host, so live API output is not supplied here.
+Copy the whole terminal transcript. The function returns the live API's raw JSON response text. Do not submit a mocked result or this instruction text as the terminal output.
+
+If using Windows with this extracted project instead, open Command Prompt in the project root and run:
+    py
+    >>> from emotion_detection import emotion_detector
+    >>> emotion_detector("I love this new technology")
+    >>> exit()

@@ -1,12 +1,11 @@
-"""Five live API unit tests required for the Emotion Detection assignment."""
+"""Five live API tests required by the Emotion Detection assignment."""
 
 import unittest
-
 from EmotionDetection.emotion_detection import emotion_detector
 
 
 class TestEmotionDetector(unittest.TestCase):
-    """Verify that the expected input sentences yield dominant emotions."""
+    """Validate the dominant emotion for the five course-provided statements."""
 
     def test_joy(self):
         result = emotion_detector("I am glad this happened")

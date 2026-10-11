@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emotion Detection</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, sans-serif; }
+    body { margin: 0; background: #f4f7fb; color: #1f2937; }
+    main { max-width: 780px; margin: 48px auto; padding: 32px; background: white;
+           border-radius: 14px; box-shadow: 0 8px 28px rgba(20,40,70,.10); }
+    h1 { margin-top: 0; color: #153b67; }
+    p { line-height: 1.5; }
+    label { display: block; font-weight: 600; margin: 22px 0 8px; }
+    textarea { box-sizing: border-box; width: 100%; min-height: 120px; padding: 12px;
+               border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; }
+    button { margin-top: 14px; background: #1f5fae; color: white; border: 0;
+             padding: 11px 18px; border-radius: 8px; font-weight: 700; cursor: pointer; }
+    .panel { margin-top: 24px; padding: 18px; border-radius: 8px; background: #f7fafc; }
+    .error { background: #fff1f2; border-left: 4px solid #be123c; padding: 14px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+    th, td { text-align: left; padding: 8px; border-bottom: 1px solid #e2e8f0; }
+    .dominant { font-size: 1.1rem; font-weight: 700; }
+    code { background: #eef2f7; padding: 2px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Emotion Detection</h1>
+  <p>Enter a sentence to analyze its anger, disgust, fear, joy, and sadness scores using IBM Watson NLP.</p>
+  <form action="/emotionDetector" method="post">
+    <label for="textToAnalyze">Text to analyze</label>
+    <textarea id="textToAnalyze" name="textToAnalyze" placeholder="For example: I am really happy today.">{{ input_text }}</textarea>
+    <button type="submit">Analyze emotion</button>
+  </form>
+  {% if error %}
+  <section class="panel error" role="alert"><strong>Input / service error:</strong> {{ error }}</section>
+  {% endif %}
+  {% if result %}
+  <section class="panel" aria-live="polite">
+    <h2>Analysis result</h2>
+    <p class="dominant">Dominant emotion: {{ result['dominant_emotion'] }}</p>
+    <table>
+      <thead><tr><th>Emotion</th><th>Score</th></tr></thead>
+      <tbody>
+      {% for emotion in ['anger', 'disgust', 'fear', 'joy', 'sadness'] %}
+        <tr><td>{{ emotion }}</td><td>{{ '%.6f'|format(result[emotion]) }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endif %}
+  <p style="color:#64748b;font-size:.85rem;margin-top:28px">Local demonstration interface. Live analysis requires access to the IBM Skills Network endpoint.</p>
+</main>
+</body>
+</html>

@@ -1,5 +1,10 @@
-The 5a_unit_testing.py file contains the five course-style live Watson API tests. After copying it to the project root as `test_emotion_detection.py`, run:
+QUESTION 9 — GENERATE THE ACTUAL TERMINAL OUTPUT
 
+The feedback says the previous response contained only instructions, not actual test output. Run this from the project root in a machine/course lab with access to the live IBM Skills Network API:
+
+python -m unittest -v test_emotion_detection.py
+
+Windows:
 py -m unittest -v test_emotion_detection.py
 
-The five tests call the live IBM Skills Network endpoint; they need working internet access and a reachable endpoint. Capture and submit the real terminal output from that run. The offline mocked suite is included separately as `test_emotion_detection.py` in the project root, and is not a substitute for the course's live API test output.
+Five live requests are made. Paste the actual full output, including all five test names ending in 'ok' and the final 'OK' summary, into Question 9. If any test fails or the API is unreachable, fix that first; do not submit a made-up transcript.

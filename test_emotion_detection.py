@@ -1,11 +1,11 @@
-"""Five course-required live tests against the IBM Watson NLP endpoint."""
-import unittest
+"""Five live API tests required by the Emotion Detection assignment."""
 
+import unittest
 from EmotionDetection.emotion_detection import emotion_detector
 
 
 class TestEmotionDetector(unittest.TestCase):
-    """Check the expected dominant emotion for the five course statements."""
+    """Validate the dominant emotion for the five course-provided statements."""
 
     def test_joy(self):
         result = emotion_detector("I am glad this happened")
